@@ -5,6 +5,9 @@
     scroll-margin-top: 156.5px;
     font-family: 'Times New Roman', Times, serif;
 }
+.S1-Style img, .S2-Style img, .navbar img{
+    max-width: 100%;
+}
 .S1-Style{
     background-color: rgb(245, 240, 230);
 }
@@ -68,3 +71,24 @@ ul {
     box-sizing: border-box;
   }
   
+  @media screen and (max-width:800px){
+    ul{
+        display: none; /*Setting navbar to invisible*/
+    }
+    .navbar-logo{
+        max-width: 75%;
+        height: auto;
+    }
+    h3{
+        font-size: 24px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .Container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-left: 8px; /* not required but seems like it has a margin*/
+        margin-right:8px
+    }
+}
